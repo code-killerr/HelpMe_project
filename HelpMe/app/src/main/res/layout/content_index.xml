@@ -34,32 +34,44 @@
     </LinearLayout>
 
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="700px"
-        android:layout_below="@id/SearchLayout">
-        <android.support.v4.view.ViewPager
-            android:id="@+id/IndexViewPager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/viewGroup"
+        <FrameLayout
+            android:id="@+id/PagerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:layout_below="@id/SearchLayout">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/IndexViewPager"
                 android:layout_width="match_parent"
-                android:layout_height="50px"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="30dp"
-                android:gravity="center"
-                android:orientation="horizontal" >
+                android:layout_height="wrap_content"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            </LinearLayout>
-        </RelativeLayout>
-    </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/viewGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+     <WebView
+         android:id="@+id/IndexWebView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/PagerLayout"/>
+
+
     <com.example.codekiller.helpme.footer.BottomAll
         android:layout_width="match_parent"
         android:layout_height="55dp"

@@ -13,10 +13,13 @@ import android.support.v7.widget.RecyclerViewAccessibilityDelegate;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -28,7 +31,7 @@ import com.example.codekiller.helpme.footer.RecycleAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Index extends AppCompatActivity implements ViewPager.OnPageChangeListener{
+public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeListener{
     private ViewPager viewPager;
 
     /**
@@ -46,12 +49,14 @@ public class Index extends AppCompatActivity implements ViewPager.OnPageChangeLi
      */
     private int[] imgIdArray ;
 
-
+    private WebView WV;
     List<String > str = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
+
+
 
         SearchView topSearch =(SearchView)findViewById(R.id.TopSearch);
         topSearch.setSubmitButtonEnabled(true);//是否添加搜索按鈕
@@ -63,10 +68,12 @@ public class Index extends AppCompatActivity implements ViewPager.OnPageChangeLi
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
             }
         });
+
+
+
+
         for(int i=0;i<20;i++)
             str.add("xxx");
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -75,6 +82,8 @@ public class Index extends AppCompatActivity implements ViewPager.OnPageChangeLi
         recyclerView.setLayoutManager(layoutManager);
         RecycleAdapter adapter = new RecycleAdapter(this,str);
         recyclerView.setAdapter(adapter);
+
+
 
 
         ViewGroup group = (ViewGroup)findViewById(R.id.viewGroup);
@@ -120,6 +129,9 @@ public class Index extends AppCompatActivity implements ViewPager.OnPageChangeLi
         viewPager.addOnPageChangeListener(this);
         //设置ViewPager的默认项, 设置为长度的100倍，这样子开始就能往左滑动
         viewPager.setCurrentItem((mImageViews.length) * 100);
+
+
+
 
     }
 
