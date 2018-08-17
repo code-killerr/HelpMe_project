@@ -1,5 +1,6 @@
 package com.example.codekiller.helpme;
 
+import android.content.Intent;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -22,6 +23,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -72,6 +74,14 @@ public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeL
         });
 
 
+        Button messButton = (Button)findViewById(R.id.messageButton);
+        messButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Index.this,PersonUI.class);
+                startActivity(intent);
+            }
+        });
 
 
         for(int i=0;i<20;i++)

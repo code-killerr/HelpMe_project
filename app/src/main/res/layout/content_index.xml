@@ -23,6 +23,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginRight="5dp"/><!--此处应该放置按钮设置特效转到搜索activity -->
             <Button
+                android:id="@+id/messageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"/>
