@@ -1,32 +1,17 @@
 package com.example.codekiller.helpme;
 
-import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerViewAccessibilityDelegate;
 import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.example.codekiller.helpme.footer.IndexViewPagerAdapter;
 import com.example.codekiller.helpme.footer.RecycleAdapter;
 
@@ -60,13 +45,13 @@ public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeL
 
 
 
-        SearchView topSearch =(SearchView)findViewById(R.id.TopSearch);
+        SearchView topSearch =findViewById(R.id.TopSearch);
         topSearch.setSubmitButtonEnabled(true);//是否添加搜索按鈕
         topSearch.setIconifiedByDefault(true);
         //topSearch.onActionViewExpanded();//是否展开搜索框
         topSearch.setBackgroundColor(0xFFFFFFFF);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab =  findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,21 +59,13 @@ public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeL
         });
 
 
-        Button messButton = (Button)findViewById(R.id.messageButton);
-        messButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Index.this,PersonUI.class);
-                startActivity(intent);
-            }
-        });
 
 
         for(int i=0;i<20;i++)
             str.add("xxx");
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.SearchText);
+        RecyclerView recyclerView = findViewById(R.id.SearchText);
         recyclerView.setLayoutManager(layoutManager);
         RecycleAdapter adapter = new RecycleAdapter(this,str);
         recyclerView.setAdapter(adapter);
@@ -96,8 +73,8 @@ public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeL
 
 
 
-        ViewGroup group = (ViewGroup)findViewById(R.id.viewGroup);
-        viewPager = (ViewPager) findViewById(R.id.IndexViewPager);
+        ViewGroup group = findViewById(R.id.viewGroup);
+        viewPager =  findViewById(R.id.IndexViewPager);
 
         //载入图片资源ID
         imgIdArray = new int[]{R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a4,};
@@ -168,7 +145,7 @@ public class Index extends AppCompatActivity  implements ViewPager.OnPageChangeL
 
     /**
      * 设置选中的tip的背景
-     * @param selectItems
+     * //@paramselectItems
      */
     private void setImageBackground(int selectItems){
         for(int i=0; i<tips.length; i++){
