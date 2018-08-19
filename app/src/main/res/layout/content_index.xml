@@ -26,12 +26,12 @@
                 android:id="@+id/messageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"/>
+                android:layout_gravity="end"/>
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/SearchText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" /><!-- 搜索框下方提示词 -->
     </LinearLayout>
 
 
@@ -39,13 +39,13 @@
         <FrameLayout
             android:id="@+id/PagerLayout"
             android:layout_width="match_parent"
-            android:layout_height="500px"
+            android:layout_height="150dp"
             android:layout_below="@id/SearchLayout">
             <android.support.v4.view.ViewPager
                 android:id="@+id/IndexViewPager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                /><!-- 轮播图 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -54,28 +54,19 @@
                 <LinearLayout
                     android:id="@+id/viewGroup"
                     android:layout_width="match_parent"
-                    android:layout_height="50px"
+                    android:layout_height="10dp"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="30dp"
                     android:gravity="center"
                     android:orientation="horizontal" >
 
-                </LinearLayout>
+                </LinearLayout><!-- 轮播图下方点点 -->
             </RelativeLayout>
 
         </FrameLayout>
 
 
-     <WebView
-         android:id="@+id/IndexWebView"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@id/PagerLayout"/>
 
 
-    <com.example.codekiller.helpme.footer.BottomAll
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/BottomLayout"/>
+
 </RelativeLayout>
