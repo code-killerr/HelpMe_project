@@ -1,7 +1,6 @@
 package com.example.codekiller.helpme.footer;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -37,7 +36,7 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
      */
     private int[] imgIdArray ;
 
-    List<String > str = new ArrayList<>();
+    List<Main_RecycleItemClass > searchText = new ArrayList<>();
     public Main_Screen(){}
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
@@ -54,14 +53,12 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
 
 
 
-
-        for(int i=0;i<20;i++)
-            str.add("xxx");
+        initSearchText();
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         RecyclerView recyclerView = view.findViewById(R.id.SearchText);
         recyclerView.setLayoutManager(layoutManager);
-        RecycleAdapter adapter = new RecycleAdapter(getActivity(),str);
+        SearchTextAdapter adapter = new SearchTextAdapter(getActivity(),searchText);
         recyclerView.setAdapter(adapter);
 
 
@@ -111,6 +108,20 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
         //设置ViewPager的默认项, 设置为长度的100倍，这样子开始就能往左滑动
         viewPager.setCurrentItem((mImageViews.length) * 100);
 
+
+        replaceFragment(new ShowMember());
+        view.findViewById(R.id.showMemberButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                replaceFragment(new ShowMember());
+            }
+        });
+        view.findViewById(R.id.showQuestionButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                replaceFragment(new ShowQuestion());
+            }
+        });
         return view;
     }
 
@@ -140,6 +151,22 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
             }else{
                 tips[i].setBackgroundResource(R.drawable.unfocused);
             }
+        }
+    }
+
+    private void initSearchText(){
+        for (int i = 0;i<20;i++){
+            Main_RecycleItemClass str = new Main_RecycleItemClass("xxxx");
+            searchText.add(str);
+        }
+    }
+
+    private void replaceFragment(Fragment fragment){
+        if (getFragmentManager()!=null) {
+            getFragmentManager().beginTransaction()
+                    //.addToBackStack(null) //支持返回键,否则点返回直接退出app
+                    .replace(R.id.little_Main_Screen, fragment)
+                    .commit();
         }
     }
 }

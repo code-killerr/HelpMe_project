@@ -11,16 +11,16 @@ import com.example.codekiller.helpme.R;
 
 import java.util.List;
 
-public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.RecycleHolder> {
+public class SearchTextAdapter extends RecyclerView.Adapter<SearchTextAdapter.RecycleHolder> {
 
 
-    Context context;
-    List<String> list;
-    public RecycleAdapter(Context context,List<String> list){
+    private Context context;
+    private List<Main_RecycleItemClass> list = null;
+    public SearchTextAdapter(Context context, List<Main_RecycleItemClass> list){
         this.context = context;
         this.list = list;
     }//构造函数
-    public void  setList(List<String> list){
+    public void  setList(List<Main_RecycleItemClass> list){
         this.list = list;
         notifyDataSetChanged();//强制调用getView来刷新每个Item的内容。
     }
@@ -40,8 +40,8 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.RecycleH
 
     @Override
     public void onBindViewHolder(RecycleHolder holder, int positon){
-        String str = list.get(positon);
-        holder.textView.setText(str);
+        Main_RecycleItemClass searchText = list.get(positon);
+        holder.textView.setText(searchText.getSearchText());
 
     }
     @Override
