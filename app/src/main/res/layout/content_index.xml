@@ -64,6 +64,31 @@
             </RelativeLayout>
 
         </FrameLayout>
+    <LinearLayout
+        android:id="@+id/MainChooseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PagerLayout">
+        <Button
+            android:id="@+id/showMemberButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="会员展示"
+            android:background="#FFFF"/><!-- 展示会员信息 -->
+        <Button
+            android:id="@+id/showQuestionButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="悬赏问题"
+            android:background="#FFFF"/><!-- 展示问题信息 -->
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/little_Main_Screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MainChooseButton"/>
 
 
 
