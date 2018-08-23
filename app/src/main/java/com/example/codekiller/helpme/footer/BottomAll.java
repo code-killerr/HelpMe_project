@@ -1,17 +1,15 @@
 package com.example.codekiller.helpme.footer;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
 
+import com.example.codekiller.helpme.BorrowEachOther;
+import com.example.codekiller.helpme.Main_Screen;
+import com.example.codekiller.helpme.PeopleService;
 import com.example.codekiller.helpme.PersonUI;
 import com.example.codekiller.helpme.R;
 
@@ -34,14 +32,14 @@ public class BottomAll extends Fragment{
         view.findViewById(R.id.BottomButton2).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                replaceFragment(new PersonUI());
+                replaceFragment(new BorrowEachOther());
             }
         });
 
         view.findViewById(R.id.BottomButton3).setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                replaceFragment(new PersonUI());
+                replaceFragment(new PeopleService());
             }
         });
 

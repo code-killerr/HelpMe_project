@@ -5,8 +5,6 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.codekiller.helpme.footer.Main_Screen;
-
 public class Index extends AppCompatActivity  {
 
     @Override
