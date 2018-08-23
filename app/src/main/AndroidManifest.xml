@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.codekiller.helpme">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 设置联网 -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +15,9 @@
         <activity
             android:name=".Index"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".Welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Welcome"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PersonUI" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" /><!-- 设置联网-->
+
 </manifest>
