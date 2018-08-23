@@ -9,7 +9,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/Main_Screen"><!--主屏幕,显示内容 -->
+        android:id="@+id/Main_Screen"
+        android:layout_above="@+id/BottomLayout"><!--主屏幕,显示内容 -->
 
     </FrameLayout>
 
