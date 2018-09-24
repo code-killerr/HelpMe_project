@@ -38,16 +38,16 @@ public class ShowMemberAdapter extends RecyclerView.Adapter<ShowMemberAdapter.Re
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.showmember_recycle, parent, false);
         RecycleHolder holder = new RecycleHolder(view);
         return holder;
-    }
+    }//调用相关布局
 
     @Override
     public void onBindViewHolder(RecycleHolder holder, int positon){
         Main_RecycleItemClass memberMessage = mMember.get(positon);
         holder.textView.setText(memberMessage.getMemberIntroduce());
         holder.imageView.setImageResource(memberMessage.getMemberImage());
-    }
+    }//调用相关数据
     @Override
     public int getItemCount(){
         return mMember.size();
-    }
+    }//返回数据数量长度
 }

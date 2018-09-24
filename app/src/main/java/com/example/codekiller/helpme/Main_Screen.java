@@ -147,10 +147,10 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
         viewPager.setCurrentItem((mImageViews.length) * 100);
 
 
-        replaceFragment(new ShowMember());
+        replaceFragment(new ShowMember());//初始展示项目
         view.findViewById(R.id.showMemberButton).setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {//展示项目变更
                 replaceFragment(new ShowMember());
             }
         });

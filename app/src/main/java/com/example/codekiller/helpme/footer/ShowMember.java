@@ -16,8 +16,7 @@ import java.util.List;
 public class ShowMember extends Fragment {
     private List<Main_RecycleItemClass> mMemberList = new ArrayList<>();
 
-    public ShowMember() {
-    }
+    public ShowMember() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
