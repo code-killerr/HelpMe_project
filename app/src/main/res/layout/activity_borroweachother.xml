@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BorrowEachOther">
+    tools:context=".BorrowEachOther"
+    android:orientation="vertical">
     <include layout = "@layout/searchbar"
         android:id="@+id/SearchLayout"/>
     <LinearLayout
