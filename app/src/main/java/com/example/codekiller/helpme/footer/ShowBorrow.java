@@ -22,6 +22,8 @@ public class ShowBorrow extends Fragment{
         topSearch.setIconifiedByDefault(true);
         //topSearch.onActionViewExpanded();//是否展开搜索框
         topSearch.setBackgroundColor(0xFFFFFFFF);
+
+
     return view;
     }
 }

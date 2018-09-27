@@ -20,26 +20,35 @@ public class ShowBorrowAdapter extends RecyclerView.Adapter<ShowBorrowAdapter.Re
         this.borrowThings = list;
     }
 
+    public void setBorrowThings(List<Borrow_RecycleItemClass> borrowThings) {//重新更改表内容
+        this.borrowThings = borrowThings;
+        notifyDataSetChanged();//强制调用getView来刷新每个Item的内容。
+    }
+
     static class RecycleHolder extends RecyclerView.ViewHolder{
-        TextView textView;
+        TextView titleTextView;
+        TextView introduceTextView;
         ImageView imageView;
         private RecycleHolder(View view){//用来临时储存数据的持有者类，提高加载效率
             super(view);
-            //textView = view.findViewById(R.id.);
-            //imageView = view.findViewById(R.id.);
+            titleTextView = view.findViewById(R.id.borrow_title);
+            introduceTextView = view.findViewById(R.id.borrow_Introduce);
+            imageView = view.findViewById(R.id.borrow_Introduce);
+
         }
     }
     @Override
-    public RecycleHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.showborrowthings_recycle, parent, false);
-        RecycleHolder holder = new RecycleHolder(view);
+        public RecycleHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.showborrowthings_recycle, parent, false);
+            RecycleHolder holder = new RecycleHolder(view);
         return holder;
     }
     @Override
     public void onBindViewHolder(RecycleHolder holder, int positon){
         Borrow_RecycleItemClass memberMessage = borrowThings.get(positon);
-        //holder.textView.setText();
-        //holder.imageView.setImageResource();
+        holder.titleTextView.setText(memberMessage.getTitle());
+        holder.introduceTextView.setText(memberMessage.getIntroduce());
+        holder.imageView.setImageResource(memberMessage.getImage());
     }//调用相关数据
     @Override
     public int getItemCount(){

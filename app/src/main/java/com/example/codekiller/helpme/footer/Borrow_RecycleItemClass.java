@@ -3,8 +3,8 @@ package com.example.codekiller.helpme.footer;
 public class Borrow_RecycleItemClass {
     private String title;
     private String introduce;
-    private int[] image;
-    public Borrow_RecycleItemClass(String title,String introduce,int[] image){
+    private int image;
+    public Borrow_RecycleItemClass(String title,String introduce,int image){
         this.title = title;
         this.introduce = introduce;
         this.image = image;
@@ -14,7 +14,7 @@ public class Borrow_RecycleItemClass {
         return title;
     }
 
-    public int[] getImage() {
+    public int getImage() {
         return image;
     }
 
@@ -22,7 +22,7 @@ public class Borrow_RecycleItemClass {
         return introduce;
     }
 
-    public void AllItem(String title,String introduce,int[] image) {
+    public void setAllItem(String title,String introduce,int image) {
         this.image = image;
         this.introduce = introduce;
         this.title = title;
