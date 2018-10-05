@@ -10,24 +10,28 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/BottomButton1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="5dp"
             />
         <Button
             android:id="@+id/BottomButton2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="5dp"/>
         <Button
             android:id="@+id/BottomButton3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="5dp"/>
         <Button
             android:id="@+id/BottomButton4"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_margin="5dp"/>
 
     </LinearLayout>
