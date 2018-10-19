@@ -31,7 +31,7 @@ public class BorrowEachOther extends Fragment {
         view.findViewById(R.id.showLendButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //replaceFragment(new ShowLend());
+                replaceFragment(new ShowLend());
             }
         });
         return view;

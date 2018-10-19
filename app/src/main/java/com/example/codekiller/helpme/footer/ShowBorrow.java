@@ -20,7 +20,8 @@ public class ShowBorrow extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.showborrowthings_layout,container,false);
-        //设置recycleview
+        //设置recycler
+        initMember();
         RecyclerView recyclerView = view.findViewById(R.id.showBorrow_Recycle);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(linearLayoutManager);

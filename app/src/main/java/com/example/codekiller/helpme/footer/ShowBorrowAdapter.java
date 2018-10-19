@@ -1,4 +1,5 @@
 package com.example.codekiller.helpme.footer;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -33,7 +34,7 @@ public class ShowBorrowAdapter extends RecyclerView.Adapter<ShowBorrowAdapter.Re
             super(view);
             titleTextView = view.findViewById(R.id.borrow_title);
             introduceTextView = view.findViewById(R.id.borrow_Introduce);
-            imageView = view.findViewById(R.id.borrow_Introduce);
+            imageView = view.findViewById(R.id.borrow_Image);
 
         }
     }
