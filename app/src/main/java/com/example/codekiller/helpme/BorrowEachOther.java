@@ -32,8 +32,8 @@ public class BorrowEachOther extends Fragment {
             @Override
             public void onClick(View view) {
                 replaceFragment(new ShowLend());
-            }
-        });
+    }
+});
         return view;
     }
 
