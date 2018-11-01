@@ -15,12 +15,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.codekiller.helpme.R;
-import com.example.codekiller.helpme.footer.IndexViewPagerAdapter;
-import com.example.codekiller.helpme.footer.Main_RecycleItemClass;
+import com.example.codekiller.helpme.footer.MainScreen.IndexViewPagerAdapter;
+import com.example.codekiller.helpme.footer.MainScreen.Main_RecycleItemClass;
 import com.example.codekiller.helpme.footer.SearchTextAdapter;
-import com.example.codekiller.helpme.footer.ShowMember;
-import com.example.codekiller.helpme.footer.ShowQuestion;
+import com.example.codekiller.helpme.footer.MainScreen.ShowMember;
+import com.example.codekiller.helpme.footer.MainScreen.ShowQuestion;
 
 import java.util.ArrayList;
 import java.util.List;

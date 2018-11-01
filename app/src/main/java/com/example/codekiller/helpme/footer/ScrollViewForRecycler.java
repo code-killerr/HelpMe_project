@@ -6,24 +6,24 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.widget.ScrollView;
 //.解决scrollview嵌套recycle没有滑动惯性问题
-public class ScrollViewForIndex extends ScrollView {
+public class ScrollViewForRecycler extends ScrollView {
     private int downX;
     private int downY;
     private int mTouchSlop;
 
 
     //覆写构造函数，获取事件触发滑动距离
-    public ScrollViewForIndex(Context context) {
+    public ScrollViewForRecycler(Context context) {
         super(context);
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
     }
 
-    public ScrollViewForIndex(Context context, AttributeSet attrs) {
+    public ScrollViewForRecycler(Context context, AttributeSet attrs) {
         super(context, attrs);
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
     }
 
-    public ScrollViewForIndex(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ScrollViewForRecycler(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
     }

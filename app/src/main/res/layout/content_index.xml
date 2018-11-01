@@ -11,7 +11,7 @@
     android:layout_below="@+id/SearchLayout">
 
 
-    <com.example.codekiller.helpme.footer.ScrollViewForIndex
+    <com.example.codekiller.helpme.footer.ScrollViewForRecycler
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 /><!-- 展示界面 -->
         </LinearLayout>
-    </com.example.codekiller.helpme.footer.ScrollViewForIndex>
+    </com.example.codekiller.helpme.footer.ScrollViewForRecycler>
 
 </android.support.v4.widget.SwipeRefreshLayout>
 

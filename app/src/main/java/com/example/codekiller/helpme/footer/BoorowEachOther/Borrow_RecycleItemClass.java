@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.BoorowEachOther;
 
 public class Borrow_RecycleItemClass {
     private String title;

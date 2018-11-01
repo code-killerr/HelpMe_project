@@ -6,8 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.codekiller.helpme.footer.ShowBorrow;
-import com.example.codekiller.helpme.footer.ShowLend;
+import com.example.codekiller.helpme.footer.BoorowEachOther.ShowBorrow;
+import com.example.codekiller.helpme.footer.BoorowEachOther.ShowLend;
 
 public class BorrowEachOther extends Fragment {
     private View view;

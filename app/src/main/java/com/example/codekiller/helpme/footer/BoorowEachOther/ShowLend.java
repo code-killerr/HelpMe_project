@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.BoorowEachOther;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.codekiller.helpme.R;
+import com.example.codekiller.helpme.footer.MainScreen.Main_RecycleItemClass;
+import com.example.codekiller.helpme.footer.MainScreen.ShowQuestionAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

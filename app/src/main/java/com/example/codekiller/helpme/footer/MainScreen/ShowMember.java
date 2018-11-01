@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.MainScreen;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.codekiller.helpme.Main_Screen;
+import com.example.codekiller.helpme.Main_Screen_Subordinates_Project.MemberMainFragment;
 import com.example.codekiller.helpme.R;
 
 import java.util.ArrayList;
@@ -29,7 +31,6 @@ public class ShowMember extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
         ShowMemberAdapter adapter = new ShowMemberAdapter(getActivity(), mMemberList);
         recyclerView.setAdapter(adapter);
-
 
         return view;
     }

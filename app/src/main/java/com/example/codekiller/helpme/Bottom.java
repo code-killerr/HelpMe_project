@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,8 +13,8 @@ import com.example.codekiller.helpme.PeopleService;
 import com.example.codekiller.helpme.PersonUI;
 import com.example.codekiller.helpme.R;
 
-public class BottomAll extends Fragment{
-    public BottomAll(){}
+public class Bottom extends Fragment{
+    public Bottom(){}
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){

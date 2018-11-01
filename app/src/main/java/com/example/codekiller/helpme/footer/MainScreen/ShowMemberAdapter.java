@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.MainScreen;
 
 import android.content.Context;
 import android.support.annotation.NonNull;

@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.MainScreen;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

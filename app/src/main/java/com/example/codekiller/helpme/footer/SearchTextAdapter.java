@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.codekiller.helpme.R;
+import com.example.codekiller.helpme.footer.MainScreen.Main_RecycleItemClass;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.MainScreen;
 
 public class Main_RecycleItemClass {
     private int memberImage;

@@ -25,7 +25,7 @@
         app:srcCompat="@android:drawable/ic_dialog_email" /><!--悬浮按钮,提问用 -->
 
     <fragment
-        android:name="com.example.codekiller.helpme.footer.BottomAll"
+        android:name="com.example.codekiller.helpme.Bottom"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"

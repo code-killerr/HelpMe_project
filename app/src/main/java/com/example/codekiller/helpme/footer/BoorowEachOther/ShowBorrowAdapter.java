@@ -1,5 +1,4 @@
-package com.example.codekiller.helpme.footer;
-import android.annotation.SuppressLint;
+package com.example.codekiller.helpme.footer.BoorowEachOther;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
