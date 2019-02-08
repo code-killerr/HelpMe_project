@@ -2,80 +2,82 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/SearchLayout"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="#04f5fe">
-        <LinearLayout
+<include layout = "@layout/searchbar"
+    android:id="@+id/SearchLayout"/>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/SearchLayout">
 
+
+    <com.example.codekiller.helpme.footer.ScrollViewForRecycler
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <android.support.v7.widget.SearchView
-                android:id="@+id/TopSearch"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginRight="5dp"/><!--此处应该放置按钮设置特效转到搜索activity -->
-            <Button
-                android:id="@+id/messageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"/>
-        </LinearLayout>
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/SearchText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
 
 
 
-        <FrameLayout
-            android:id="@+id/PagerLayout"
-            android:layout_width="match_parent"
-            android:layout_height="500px"
-            android:layout_below="@id/SearchLayout">
-            <android.support.v4.view.ViewPager
-                android:id="@+id/IndexViewPager"
+
+            <FrameLayout
+                android:id="@+id/PagerLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:id="@+id/viewGroup"
+                android:layout_height="150dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/IndexViewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="50px"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="30dp"
-                    android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:layout_height="wrap_content"
+                    /><!-- 轮播图 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </LinearLayout>
-            </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/viewGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
 
-        </FrameLayout>
+                    </LinearLayout><!-- 轮播图下方点点 -->
+                </RelativeLayout>
 
+            </FrameLayout>
 
-     <WebView
-         android:id="@+id/IndexWebView"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_below="@id/PagerLayout"/>
+            <LinearLayout
+                android:id="@+id/MainChooseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/showMemberButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="会员展示"
+                    android:background="#FFFF"/><!-- 展示会员信息 -->
+                <Button
+                    android:id="@+id/showQuestionButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="悬赏问题"
+                    android:background="#FFFF"/><!-- 展示问题信息 -->
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/little_Main_Screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                /><!-- 展示界面 -->
+        </LinearLayout>
+    </com.example.codekiller.helpme.footer.ScrollViewForRecycler>
 
+</android.support.v4.widget.SwipeRefreshLayout>
 
-    <com.example.codekiller.helpme.footer.BottomAll
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/BottomLayout"/>
 </RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowEachOther"
+    android:orientation="vertical">
+    <include layout = "@layout/searchbar"
+        android:id="@+id/SearchLayout"/>
+    <LinearLayout
+        android:id="@+id/MainChooseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/showBorrowButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="租借区"
+            android:background="#FFFF"/><!-- 展示会员信息 -->
+        <Button
+            android:id="@+id/showLendButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="需求区"
+            android:background="#FFFF"/><!-- 展示问题信息 -->
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/little_Main_Screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        /><!-- 展示界面 -->
+    
+</LinearLayout>

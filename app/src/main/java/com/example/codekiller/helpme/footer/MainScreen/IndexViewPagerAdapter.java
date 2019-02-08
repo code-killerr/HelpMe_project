@@ -1,4 +1,4 @@
-package com.example.codekiller.helpme.footer;
+package com.example.codekiller.helpme.footer.MainScreen;
 
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;

@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Index">
 
-    <include layout="@layout/content_index" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Main_Screen"
+        android:layout_above="@+id/BottomLayout"><!--主屏幕,显示内容 -->
+
+    </FrameLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -16,6 +22,12 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="78dp"
         android:layout_marginEnd="23dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_dialog_email" /><!--悬浮按钮,提问用 -->
 
+    <fragment
+        android:name="com.example.codekiller.helpme.Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomLayout"/><!-- 底部导航栏 -->
 </RelativeLayout>
