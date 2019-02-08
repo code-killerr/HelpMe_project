@@ -199,7 +199,7 @@ public class Main_Screen extends Fragment implements ViewPager.OnPageChangeListe
         }
     }
 
-    private void replaceFragment(Fragment fragment) {
+    public void replaceFragment(Fragment fragment) {
         if (getFragmentManager() != null) {
             getFragmentManager().beginTransaction()
                     //.addToBackStack(null) //支持返回键,否则点返回直接退出app
