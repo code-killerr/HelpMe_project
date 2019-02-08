@@ -32,6 +32,7 @@ public class ShowMemberAdapter extends RecyclerView.Adapter<ShowMemberAdapter.Re
         ImageView imageView;
         private RecycleHolder(View view){
             super(view);
+            ShowMemberView = view;
             textView = view.findViewById(R.id.memberIntroduce);
             imageView = view.findViewById(R.id.memberPic);
         }
@@ -45,7 +46,6 @@ public class ShowMemberAdapter extends RecyclerView.Adapter<ShowMemberAdapter.Re
             public void onClick(View view) {
                 int positon = holder.getAdapterPosition();
                 Main_RecycleItemClass member = mMember.get(positon);
-
             }
         });
         return holder;
