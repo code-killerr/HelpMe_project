@@ -25,4 +25,5 @@ public class MemberInfo extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
