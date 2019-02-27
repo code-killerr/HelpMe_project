@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/user"/>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:text="代取包裹，速联！！"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:layout_marginTop="18dp"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="id:代取小哥哥"
+            android:textColor="#eb7e10de"
+            android:textSize="18dp"
+            android:gravity="left"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/duihuan"
+        android:text="确定"
+        android:textSize="20dp"
+        android:textColor="#9F9F0B"
+        android:gravity="center"
+        android:layout_marginTop="90dp"/>
+
+
+
+
+</LinearLayout>

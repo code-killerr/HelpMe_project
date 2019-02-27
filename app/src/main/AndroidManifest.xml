@@ -25,6 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity_huzubi" />
+        <activity android:name=".setting"></activity>
     </application>
 
 </manifest>
