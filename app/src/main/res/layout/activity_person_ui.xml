@@ -1,17 +1,23 @@
-  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-      <include layout="@layout/title"/>
+    <include layout="@layout/title"/>
 
-      <RelativeLayout
+    <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:background="#F5F5F5">
+          android:background="#F5F5F5"
+          android:orientation="vertical">
 
           <ImageView
               android:id="@+id/h_back"
@@ -49,45 +55,58 @@
 
       </RelativeLayout>
 
-
-      <LinearLayout
+    <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="90dp"
           android:background="#FFF5EE"
           android:orientation="horizontal">
-
           <Button
               android:id="@+id/button_wdsc"
-              android:layout_width="120dp"
-              android:layout_height="match_parent"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
               android:layout_gravity="center"
-              android:layout_margin="10dp"
-              android:background="#FF7F50"
+              android:layout_margin="20dp"
+              android:background="@drawable/bt_sc"
+              android:drawableTop="@drawable/sc"
+              android:textSize="10dp"
               android:text="我的收藏"
-              android:textColor="#fff" />
-
+               />
           <Button
               android:id="@+id/button_yhj"
-              android:layout_width="120dp"
-              android:layout_height="match_parent"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
               android:layout_gravity="center"
-              android:layout_margin="10dp"
-              android:background="#FF7F50"
+              android:layout_margin="20dp"
+              android:background="@drawable/bt_sc"
+              android:drawableTop="@drawable/ticket"
+              android:textSize="10dp"
               android:text="优惠券"
-              android:textColor="#fff" />
-
+              />
+          <Button
+              android:id="@+id/button_wdzj"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:layout_gravity="center"
+              android:layout_margin="20dp"
+              android:background="@drawable/bt_sc"
+              android:drawableTop="@drawable/footprint"
+              android:textSize="10dp"
+              android:text="我的足迹"
+              />
           <Button
               android:id="@+id/button_hzb"
-              android:layout_width="120dp"
-              android:layout_height="match_parent"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
               android:layout_gravity="center"
-              android:layout_margin="10dp"
-              android:background="#FF7F50"
+              android:layout_margin="20dp"
+              android:background="@drawable/bt_sc"
+              android:drawableTop="@drawable/hzb"
+              android:textSize="10dp"
               android:text="互助币"
-              android:textColor="#fff" />
+              />
       </LinearLayout>
 
-      <LinearLayout
+    <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="40dp"
           android:orientation="horizontal"
@@ -113,93 +132,68 @@
               android:textColor="#FFC0CB"/>
       </LinearLayout>
 
-      <LinearLayout
+    <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="100dp"
-          android:orientation="horizontal"
-          android:background="#FFF5EE">
-          
-          <Button
-              android:layout_width="82dp"
-              android:layout_height="100dp"
-              android:background="#40E0D0"
-              android:text="待付款"/>
-          <Button
-              android:layout_width="82dp"
-              android:layout_height="100dp"
-              android:background="#40E0D0"
-              android:text="待完成"/>
-          <Button
-              android:layout_width="82dp"
-              android:layout_height="100dp"
-              android:background="#40E0D0"
-              android:text="待确认"/>
-          <Button
-              android:layout_width="82dp"
-              android:layout_height="100dp"
-              android:background="#40E0D0"
-              android:text="待评价"/>
-          <Button
-              android:layout_width="82dp"
-              android:layout_height="100dp"
-              android:background="#40E0D0"
-              android:text="退款/售后"/>
+          android:background="#f5f4f4"
+          android:orientation="horizontal">
 
+          <Button
+              android:id="@+id/Button1"
+              android:layout_width="82dp"
+              android:layout_height="90dp"
+              android:background="@drawable/bt_dzf"
+              android:drawableTop="@drawable/pay"
+              android:text="待支付"
+              android:textSize="15dp"
+              android:textColor="#e25a21"/>
+          <Button
+              android:id="@+id/Button2"
+              android:layout_width="82dp"
+              android:layout_height="90dp"
+              android:background="@drawable/bt_dzf"
+              android:drawableTop="@drawable/send"
+              android:text="待发货"
+              android:textSize="15dp"
+              android:textColor="#e25a21"/>
+          <Button
+              android:id="@+id/Button3"
+              android:layout_width="82dp"
+              android:layout_height="90dp"
+              android:background="@drawable/bt_dzf"
+              android:drawableTop="@drawable/deliver"
+              android:text="待收货"
+              android:textSize="15dp"
+              android:textColor="#e25a21" />
+          <Button
+              android:id="@+id/Button4"
+              android:layout_width="82dp"
+              android:layout_height="90dp"
+              android:background="@drawable/bt_dzf"
+              android:drawableTop="@drawable/edit"
+              android:text="评价"
+              android:textSize="15dp"
+              android:textColor="#e25a21"/>
+          <Button
+              android:id="@+id/Button5"
+              android:layout_width="82dp"
+              android:layout_height="90dp"
+              android:background="@drawable/bt_dzf"
+              android:drawableTop="@drawable/refund"
+              android:text="售后/退款"
+              android:textSize="15dp"
+              android:textColor="#e25a21"/>
       </LinearLayout>
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="220dp"
-          android:orientation="vertical"
-          android:layout_marginBottom="0.1dp"
-          android:background="#F0FFFF">
-
-          <Button
-              android:id="@+id/text_address"
-              android:layout_width="match_parent"
-              android:layout_height="55dp"
-              android:background="#F0FFFF"
-              android:gravity="center"
-              android:padding="3dp"
-              android:text="我的地址"
-              android:textColor="#A020F0"
-              android:textSize="20dp"/>
-          <Button
-              android:id="@+id/text_yj"
-              android:layout_width="match_parent"
-              android:layout_height="55dp"
-              android:background="#F0FFFF"
-              android:gravity="center"
-              android:padding="3dp"
-              android:text="意见反馈"
-              android:textColor="#A020F0"
-              android:textSize="20dp"/>
-          <Button
-              android:id="@+id/text_update"
-              android:layout_width="match_parent"
-              android:layout_height="55dp"
-              android:background="#F0FFFF"
-              android:gravity="center"
-              android:padding="3dp"
-              android:text="检查更新"
-              android:textColor="#A020F0"
-              android:textSize="20dp"/>
-          <Button
-              android:id="@+id/text_us"
-              android:layout_width="match_parent"
-              android:layout_height="55dp"
-              android:background="#F0FFFF"
-              android:gravity="center"
-              android:padding="3dp"
-              android:text="关于我们"
-              android:textColor="#A020F0"
-              android:textSize="20dp"/>
-
-      </LinearLayout>
+        <include layout="@layout/address" />
+    <include layout="@layout/uesrsafe"/>
+    <include layout="@layout/update"/>
+    <include layout="@layout/solveproblem"/>
+    <include layout="@layout/about"/>
+    </LinearLayout>
 
 
 
 
 
-
-      </LinearLayout>
+</ScrollView>

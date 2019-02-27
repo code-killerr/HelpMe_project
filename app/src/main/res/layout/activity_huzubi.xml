@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/wodejinbi"/>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#48EBEB"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:text="400"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+            android:text="当前金币数"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#71C2B1">
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="兑换奖品"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <include layout="@layout/jiangping"/>
+    <include layout="@layout/jiangping"/>
+    <include layout="@layout/jiangping"/>
+    <include layout="@layout/jiangping"/>
+    <include layout="@layout/jiangping"/>
+    </LinearLayout>
+</ScrollView>
