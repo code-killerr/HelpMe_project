@@ -12,12 +12,14 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="50dp"
+            android:background="@drawable/question"
             />
         <Button
             android:id="@+id/BottomButton2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="50dp"
+            android:background="@drawable/borrow"
             />
         <Button
             android:id="@+id/BottomButton3"
