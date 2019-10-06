@@ -3,36 +3,48 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#05e5f5">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BottomButton1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/question"
-            />
-        <Button
-            android:id="@+id/BottomButton2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/borrow"
-            />
-        <Button
-            android:id="@+id/BottomButton3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/people_service" />
-        <Button
-            android:id="@+id/BottomButton4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/self" />
+    android:background="#fff"
+    android:gravity="center"
+    >
 
-    </LinearLayout>
+        <RadioGroup
+            android:id="@+id/RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation = "horizontal"
+            android:fitsSystemWindows="true"
+            >
+
+
+                <RadioButton
+                    android:id="@+id/BottomButton1"
+                    style="@style/Bottom_tab_styles"
+                    android:layout_marginTop="1dp"
+                    android:checked="true"
+                    android:drawableTop="@drawable/bg_question_selector"
+                    android:text="帮别人"
+                    android:textSize="12dp" />
+        <RadioButton
+            android:id="@+id/BottomButton2"
+            style="@style/Bottom_tab_styles"
+            android:layout_marginTop="1dp"
+            android:text="帮自己"
+            android:textSize="12dp"
+            android:background="@drawable/bg_borrow_selector"
+            />
+        <RadioButton
+            android:id="@+id/BottomButton3"
+            style="@style/Bottom_tab_styles"
+            android:layout_marginTop="1dp"
+            android:text="帮了谁"
+            android:textSize="12dp"
+            android:background="@drawable/bg_service_selector" />
+        <RadioButton
+            android:id="@+id/BottomButton4"
+            style="@style/Bottom_tab_styles"
+            android:layout_marginTop="1dp"
+            android:text="我的家"
+            android:textSize="12dp"
+            android:background="@drawable/bg_self_selector" />
+        </RadioGroup>
 </LinearLayout>
