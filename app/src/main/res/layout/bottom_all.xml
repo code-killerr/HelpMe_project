@@ -23,28 +23,28 @@
                     android:checked="true"
                     android:drawableTop="@drawable/bg_question_selector"
                     android:text="帮别人"
-                    android:textSize="12dp" />
+                     />
         <RadioButton
             android:id="@+id/BottomButton2"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
             android:text="帮自己"
-            android:textSize="12dp"
-            android:background="@drawable/bg_borrow_selector"
+
+            android:drawableTop="@drawable/bg_borrow_selector"
             />
         <RadioButton
             android:id="@+id/BottomButton3"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
             android:text="帮了谁"
-            android:textSize="12dp"
-            android:background="@drawable/bg_service_selector" />
+
+            android:drawableTop="@drawable/bg_service_selector" />
         <RadioButton
             android:id="@+id/BottomButton4"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
             android:text="我的家"
-            android:textSize="12dp"
-            android:background="@drawable/bg_self_selector" />
+
+            android:drawableTop="@drawable/bg_self_selector" />
         </RadioGroup>
 </LinearLayout>
