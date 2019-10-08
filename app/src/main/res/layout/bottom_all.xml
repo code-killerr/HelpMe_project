@@ -22,13 +22,13 @@
                     android:layout_marginTop="1dp"
                     android:checked="true"
                     android:drawableTop="@drawable/bg_question_selector"
-                    android:text="帮别人"
+                    android:text="互帮互助"
                      />
         <RadioButton
             android:id="@+id/BottomButton2"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
-            android:text="帮自己"
+            android:text="借下东西"
 
             android:drawableTop="@drawable/bg_borrow_selector"
             />
@@ -36,14 +36,14 @@
             android:id="@+id/BottomButton3"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
-            android:text="帮了谁"
+            android:text="找人跑腿"
 
             android:drawableTop="@drawable/bg_service_selector" />
         <RadioButton
             android:id="@+id/BottomButton4"
             style="@style/Bottom_tab_styles"
             android:layout_marginTop="1dp"
-            android:text="我的家"
+            android:text="个人中心"
 
             android:drawableTop="@drawable/bg_self_selector" />
         </RadioGroup>
