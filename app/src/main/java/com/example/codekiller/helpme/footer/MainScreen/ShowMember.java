@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.codekiller.helpme.Main_Screen;
-import com.example.codekiller.helpme.Main_Screen_Subordinates_Project.MemberMainFragment;
 import com.example.codekiller.helpme.R;
 
 import java.util.ArrayList;

@@ -1,6 +1,7 @@
 package com.example.codekiller.helpme.footer.MainScreen;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,8 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.codekiller.helpme.Index;
-import com.example.codekiller.helpme.Main_Screen;
+import com.example.codekiller.helpme.Main_Screen_Subordinates_Project.MemberInfo;
 import com.example.codekiller.helpme.R;
 
 import java.util.List;
@@ -46,6 +46,8 @@ public class ShowMemberAdapter extends RecyclerView.Adapter<ShowMemberAdapter.Re
             public void onClick(View view) {
                 int positon = holder.getAdapterPosition();
                 Main_RecycleItemClass member = mMember.get(positon);
+                context.startActivity(new Intent(context,MemberInfo.class));
+
             }
         });
         return holder;
