@@ -9,9 +9,10 @@
 该应用主要有三个功能：互帮互助、借下东西、找人跑腿。互帮互助为该应用的主要功能
 
 ### 互帮互助可让用户对于无法解决或者需要解决的问题进行发布，同时也可以在当前页面接取他人发布的任务
+<div style="float:left">
 <img src = "https://github.com/code-killerr/HelpMe_project/blob/master/2.png" width = 40%>
 <img src = "https://github.com/code-killerr/HelpMe_project/blob/master/3.png" width = 40%>
-
+</div>
 ### 借下东西可以让用户发布闲置物品以供他人租借，同时也可以在当前页面发布需要借的物品
 
 <img src = "https://github.com/code-killerr/HelpMe_project/blob/master/4.png">
